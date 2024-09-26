@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Services - Kelly Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+    }
+    
+    h1 {
+      text-align: center;
+      margin: 40px 0;
+      font-weight: 700;
+    }
+    
+    #products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+    }
+    
+    .product {
+      background-color: white;
+      border-radius: 10px;
+      width: 300px;
+      margin: 15px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    
+    .product:hover {
+      transform: translateY(-5px);
+    }
+    
+    .product img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    
+    .product h3 {
+      font-weight: 700;
+      margin: 15px 0;
+    }
+    
+    .product p {
+      color: #666;
+      margin-bottom: 15px;
+    }
+    
+    .price {
+      font-size: 18px;
+      color: #28a745;
+      font-weight: 700;
+    }
+   
+    .whatsapp-button {
+            background-color: #25D366; /* Couleur de WhatsApp */
+            color: white; /* Texte blanc */
+            padding: 10px 20px; /* Espacement */
+            border: none; /* Pas de bordure */
+            border-radius: 5px; /* Coins arrondis */
+            cursor: pointer; /* Curseur pointeur */
+            font-size: 16px; /* Taille de la police */
+        }
+
+        /* إخفاء حقل الإدخال */
+        #productNumber {
+            display: none;
+        }
+    
+  </style>
+</head>
+
+<body class="services-page">
+
+  <header id="header" class="header d-flex align-items-center light-background sticky-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <h1 class="sitename">احمد النجار</h1>
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">الصفحة الرئيسية</a></li>
+          <li><a href="services.html" >تقديم</a></li>
+          <li><a href="portfolio.html">الخدمات</a></li>
+          <li><a href="contact.html">اتصل بنا</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+      <div class="header-social-links">
+        <a href="https://web.facebook.com/ahmedbasbass/?locale=ar_AR" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <h1>  تصاميم مطابخ </h1>  
+
+    <section id="products">
+      <div class="product">
+        <img height="300px" src="assets/img/cuisine/cuisine1.jpg" alt="Produit 1">
+        <h3>مطبخ 1</h3>
+        
+        <button class="whatsapp-button" onclick="sendMessage(' مطبخ  1', 1)">
+            معلومات أكثر
+        </button>
+      </div>
+      <div class="product">
+        <img  height="300px" src="assets/img/cuisine/cuisine3.jpg" alt="Produit 2">
+        <h3>مطبخ 2</h3>
+        
+        <button class="whatsapp-button" onclick="sendMessage(' مطبخ   2', 2)">
+            معلومات أكثر
+        </button>
+      </div>
+      <div class="product">
+        <img  height="300px" src="assets/img/cuisine/cuisine5.jpg" alt="Produit 3">
+        <h3>مطبخ 3</h3>
+       
+        <button class="whatsapp-button" onclick="sendMessage('  مطبخ 3', 3)">
+            معلومات أكثر
+        </button>
+      </div>
+      <div class="product">
+        <img  height="300px" src="assets/img/cuisine/cuisine6.jpg" alt="Produit 4">
+        <h3>مطبخ 4</h3>
+      
+        <button class="whatsapp-button" onclick="sendMessage('  مطبخ 4', 4)">
+            معلومات أكثر
+        </button>
+      </div>
+      <div class="product">
+        <img  height="300px" src="assets/img/cuisine/cuisine7.jpg" alt="Produit 5">
+        <h3>مطبخ 5</h3>
+        
+        <button class="whatsapp-button" onclick="sendMessage('  مطبخ 5', 5)">
+            معلومات أكثر
+        </button>
+      </div>
+      <div class="product">
+        <img  height="300px" src="assets/img/cuisine/cuisine9.jpg">
+        <h3>مطبخ 6</h3>
+        
+        <button class="whatsapp-button" onclick="sendMessage('  مطبخ 6', 6)">
+            معلومات أكثر
+        </button>
+      </div>
+      <div class="product">
+        <img  height="300px" src="assets/img/cuisine/cuisine10.jpg">
+        <h3>مطبخ 7</h3>
+       
+        <button class="whatsapp-button" onclick="sendMessage('  مطبخ 7', 7)">
+            معلومات أكثر
+        </button>
+      </div>
+      <div class="product">
+        <img height="300px"  src="assets/img/cuisine/cuisine11.jpg">
+        <h3> مطبخ 8</h3>
+        <button class="whatsapp-button" onclick="sendMessage('  مطبخ 8', 8)">
+            معلومات أكثر
+        </button>
+      </div>
+
+      <div class="product">
+        <img height="300px"  src="assets/img/cuisine/cuisine12.jpg">
+        <h3> مطبخ 9</h3>
+        <button class="whatsapp-button" onclick="sendMessage('  مطبخ 9', 9)">
+            معلومات أكثر
+        </button>
+      </div>
+
+      <div class="product">
+        <img height="300px"  src="assets/img/cuisine/cuisine13.jpg">
+        <h3> مطبخ 10</h3>
+        <button class="whatsapp-button" onclick="sendMessage('  مطبخ 10', 10)">
+            معلومات أكثر
+        </button>
+      </div>
+
+      <div class="product">
+        <img height="300px"  src="assets/img/cuisine/cuisine14.jpg">
+        <h3> مطبخ 11</h3>
+        <button class="whatsapp-button" onclick="sendMessage('  مطبخ 11', 11)">
+            معلومات أكثر
+        </button>
+      </div>
+
+      <div class="product">
+        <img height="300px"  src="assets/img/cuisine/cuisine15.jpg">
+        <h3> مطبخ 12</h3>
+        <button class="whatsapp-button" onclick="sendMessage('  مطبخ 12', 12)">
+            معلومات أكثر
+        </button>
+      </div>
+
+      <div class="product">
+        <img height="300px"  src="assets/img/cuisine/cuisine16.jpg">
+        <h3> مطبخ 13</h3>
+        <button class="whatsapp-button" onclick="sendMessage('  مطبخ 13', 13)">
+            معلومات أكثر
+        </button>
+      </div>
+
+      <div class="product">
+        <img height="300px"  src="assets/img/cuisine/cuisine17.jpg">
+        <h3> مطبخ 14</h3>
+        <button class="whatsapp-button" onclick="sendMessage('  مطبخ 14', 14)">
+            معلومات أكثر
+        </button>
+      </div>
+
+      <div class="product">
+        <img height="300px"  src="assets/img/cuisine/cuisine18.jpg">
+        <h3> مطبخ 15</h3>
+        <button class="whatsapp-button" onclick="sendMessage('  مطبخ 15', 15)">
+            معلومات أكثر
+        </button>
+      </div>
+
+      <div class="product">
+        <img height="300px"  src="assets/img/cuisine/cuisine19.jpg">
+        <h3> مطبخ 16</h3>
+        <button class="whatsapp-button" onclick="sendMessage('  مطبخ 16', 16)">
+            معلومات أكثر
+        </button>
+      </div>
+
+      <div class="product">
+        <img height="300px"  src="assets/img/cuisine/cuisine20.jpg">
+        <h3> مطبخ 17</h3>
+        <button class="whatsapp-button" onclick="sendMessage('  مطبخ 17', 17)">
+            معلومات أكثر
+        </button>
+      </div>
+
+      <div class="product">
+        <img height="300px"  src="assets/img/cuisine/cuisine21.jpg">
+        <h3> مطبخ 18</h3>
+        <button class="whatsapp-button" onclick="sendMessage('  مطبخ 18', 18)">
+            معلومات أكثر
+        </button>
+      </div>
+
+      <div class="product">
+        <img height="300px"  src="assets/img/cuisine/cuisine22.jpg">
+        <h3> مطبخ 19</h3>
+        <button class="whatsapp-button" onclick="sendMessage('  مطبخ 19', 19)">
+            معلومات أكثر
+        </button>
+      </div>
+
+      <div class="product">
+        <img height="300px"  src="assets/img/cuisine/cuisine2.jpg">
+        <h3> مطبخ 20</h3>
+        <button class="whatsapp-button" onclick="sendMessage('  مطبخ 20', 20)">
+            معلومات أكثر
+        </button>
+      </div>
+
+     
+
+    </section>
+  </main>
+
+  <footer id="footer" class="footer light-background">
+    <div class="container">
+      <div class="copyright text-center">
+        <p style="color: #fc0707; font-size: 16px;">تواصلوا معنا</p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://web.facebook.com/ahmedbasbass/?locale=ar_AR" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+  <script>
+    function sendMessage(productName, productNumber) {
+      const message = `السلام عليكم، أود الاستفسار حول المنتج "${productName}" برقم (${productNumber}). هل بإمكانكم تزويدي بمزيد من التفاصيل حول الخصائص والسعر؟ شكرًا جزيلًا.`;
+      const whatsappURL = `https://wa.me/212717707677?text=${encodeURIComponent(message)}`;
+        window.location.href = whatsappURL; // إعادة توجيه المستخدم إلى واتساب
+    }
+</script>
+
+</body>
+
+</html>
