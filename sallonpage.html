@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 
 <head>
   <meta charset="utf-8">
@@ -26,88 +26,93 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- Custom Styles for Services Page -->
   <style>
     body {
-      font-family: 'Poppins', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f8f8f8;
-    }
-    
-    h1 {
-      text-align: center;
-      margin: 40px 0;
-      font-weight: 700;
-    }
-    
-    #products {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 20px;
-    }
-    
-    .product {
-      background-color: white;
-      border-radius: 10px;
-      width: 300px;
-      margin: 15px;
-      padding: 20px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      text-align: center;
-      transition: transform 0.3s;
-    }
-    
-    .product:hover {
-      transform: translateY(-5px);
-    }
-    
-    .product img {
-      max-width: 100%;
-      border-radius: 10px;
-    }
-    
-    .product h3 {
-      font-weight: 700;
-      margin: 15px 0;
-    }
-    
-    .product p {
-      color: #666;
-      margin-bottom: 15px;
-    }
-    
-    .price {
-      font-size: 18px;
-      color: #28a745;
-      font-weight: 700;
-    }
-   
-    .whatsapp-button {
-            background-color: #25D366; /* Couleur de WhatsApp */
-            color: white; /* Texte blanc */
-            padding: 10px 20px; /* Espacement */
-            border: none; /* Pas de bordure */
-            border-radius: 5px; /* Coins arrondis */
-            cursor: pointer; /* Curseur pointeur */
-            font-size: 16px; /* Taille de la police */
-        }
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
 
-        /* إخفاء حقل الإدخال */
-        #productNumber {
-            display: none;
-        }
-    
-  </style>
+h1 {
+  text-align: center;
+  margin: 40px 0;
+  font-weight: 700;
+}
+
+#products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.product {
+  background-color: white;
+  border-radius: 10px;
+  width: 300px;
+  margin: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+}
+
+.product img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.product h3 {
+  font-weight: 700;
+  margin: 15px 0;
+}
+
+.product p {
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.price {
+  font-size: 18px;
+  color: #28a745;
+  font-weight: 700;
+}
+
+.whatsapp-button {
+        background-color: #25D366; /* Couleur de WhatsApp */
+        color: white; /* Texte blanc */
+        padding: 10px 20px; /* Espacement */
+        border: none; /* Pas de bordure */
+        border-radius: 5px; /* Coins arrondis */
+        cursor: pointer; /* Curseur pointeur */
+        font-size: 16px; /* Taille de la police */
+    }
+
+    /* إخفاء حقل الإدخال */
+    #productNumber {
+        display: none;
+    }
+
+</style>
 </head>
 
 <body class="services-page">
 
+  <!-- Navbar Adaptée -->
   <header id="header" class="header d-flex align-items-center light-background sticky-top">
     <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
         <h1 class="sitename">احمد النجار</h1>
       </a>
+
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html">الصفحة الرئيسية</a></li>
@@ -117,14 +122,18 @@
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-      <div class="header-social-links">
-        <a href="https://web.facebook.com/ahmedbasbass/?locale=ar_AR" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-      </div>
-    </div>
-  </header>
 
+      <div class="header-social-links">
+        <a href="https://web.facebook.com/ahmedbasbass/?locale=ar_AR"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+    </div>
+    
+  </header>
+  
+  
   <main class="main">
 
     <h1>صالونات عصرية</h1>
@@ -882,6 +891,24 @@
       </div>
     </div>
   </footer>
+   <!-- Scripts JS -->
+   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+   <script src="assets/vendor/php-email-form/validate.js"></script>
+   <script src="assets/vendor/aos/aos.js"></script>
+   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+ 
+   <!-- Main JS File -->
+   <script src="assets/js/main.js"></script>
+  <script>
+    document.querySelector('.mobile-nav-toggle').addEventListener('click', function () {
+      document.querySelector('#navmenu ul').classList.toggle('d-block');
+    });
+  </script>
   <script>
     function sendMessage(productName, productNumber) {
         const message = `السلام عليكم، أود الاستفسار حول المنتج "${productName}" برقم (${productNumber}). هل بإمكانكم تزويدي بمزيد من التفاصيل حول الخصائص والسعر؟ شكرًا جزيلًا.`;
