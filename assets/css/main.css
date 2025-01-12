@@ -36,6 +36,44 @@
   --nav-dropdown-color: #444444; /* Used for navigation links of the dropdown items in the navigation menu. */
   --nav-dropdown-hover-color: #34b7a7; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
+#image1 {
+  width: 100%; /* L'image prend toute la largeur du conteneur */
+  height: auto; /* Maintient les proportions de l'image */
+  display: block; /* Évite les marges verticales indésirables */
+  object-fit: cover; /* Couvre toute la zone sans déformation, en coupant les parties qui dépassent */
+}
+
+/* Media queries pour s'adapter aux appareils mobiles */
+@media (max-width: 768px) {
+  #image1 {
+    object-fit: contain; /* Sur les petits écrans, l'image sera entièrement visible sans être coupée */
+  }
+}
+
+/* Media query pour les tablettes et écrans moyens */
+@media (min-width: 769px) and (max-width: 1024px) {
+  #image1 {
+    object-fit: contain; /* L'image sera bien visible et adaptée aux écrans de taille intermédiaire */
+  }
+}
+
+/* Media query pour les grands écrans (ordinateurs de bureau) */
+@media (min-width: 1025px) {
+  #image1 {
+    object-fit: cover; /* L'image couvre toute la zone de son conteneur pour les grands écrans */
+  }
+}
+
+.hero.section {
+  display: flex;
+  justify-content: center; /* Centre l'image horizontalement */
+  align-items: center; /* Centre l'image verticalement */
+  height: 100vh; /* Prend toute la hauteur de la fenêtre */
+  overflow: hidden; /* Évite les débordements */
+  background-color: #f8f9fa; /* Couleur de fond si nécessaire */
+}
+
+
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
