@@ -920,7 +920,7 @@ h1 {
   </script>
   <script>
     function sendMessage(productName, productNumber) {
-        const message = `السلام عليكم، أود الاستفسار حول المنتج "${productName}" برقم (${productNumber}). هل بإمكانكم تزويدي بمزيد من التفاصيل حول الخصائص والسعر؟ شكرًا جزيلًا.`;
+        const message = `السلام عليكم، أود الاستفسار حول المنتج "${productName}" برقم (${productNumber}). هل بإمكانكم تزويدي بمزيد من التفاصيل حول الخصائص والسعر؟ شكرًا جزيلًا. يمكنكم مشاهدة تفاصيل المنتج هنا: https://basbassi.github.io/menuiserie/sallonpage.html`;
         const whatsappURL = `https://wa.me/212666139836?text=${encodeURIComponent(message)}`;
         window.location.href = whatsappURL; // إعادة توجيه المستخدم إلى واتساب
     }
